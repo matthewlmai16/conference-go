@@ -2,8 +2,8 @@
 function createCard (name, location, description, pictureUrl, start, end) {
     return `
         <div class="col">
-            <div class="shadow p-3 bg-body-tertiary rounded">
-                <div class="card">
+            <div class="card shadow p-3 bg-body-tertiary rounded">
+                <div class="col">
                     <img src="${pictureUrl}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">${name}</h5>
