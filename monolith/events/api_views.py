@@ -29,7 +29,7 @@ class LocationDetailEncoder(ModelEncoder):
 
 class ConferenceListEncoder(ModelEncoder):
     model = Conference
-    properties = ["name"]
+    properties = ["name","id"]
 
 
 class ConferenceDetailEncoder(ModelEncoder):
@@ -245,3 +245,16 @@ def api_list_states(request):
             "states": state_list
         }
         )
+
+
+# request decorator
+# define api_list_states
+#     if request method is GET:
+#         get the data within states ordered by name
+
+#         create a list
+#         for loop iterating through states ordered by name
+#             create dictionary with name as key and abbreviation as ValueError
+#             add that dictionary to the list
+
+#         return jsonresponse
